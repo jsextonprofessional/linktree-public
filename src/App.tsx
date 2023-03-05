@@ -1,5 +1,5 @@
-import { WidthContainer } from "../src/components/width-container";
-import { Link } from "../src/components/link";
+import { WidthContainer } from "../src/components/width-container/WidthContainer";
+import { Link } from "../src/components/link/Link";
 import "./App.css";
 
 function App() {
