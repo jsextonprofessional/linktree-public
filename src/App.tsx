@@ -6,19 +6,37 @@ function App() {
   const links = [
     {
       url: "https://www.google.com",
+      title: "Portfolio",
+    },
+    {
+      url: "https://www.github.com/jsextonprofessional",
       title: "Github",
+    },
+    {
+      url: "https://www.linkedin.com/in/jsextonprofessional/",
+      title: "LinkedIn",
+    },
+    {
+      url: "https://www.instagram.com/jsextonprofessional/",
+      title: "Instagram",
+    },
+    {
+      url: "#",
+      title: "Email Me",
+    },
+    {
+      url: "#",
+      title: "Resume",
     },
   ];
 
   return (
     <div className="App">
       <WidthContainer>
-        <Link url={"links[0].url"} title={links[0].title} />
-        <Link url={"links[0].url"} title={links[0].title} />
-        <Link url={"links[0].url"} title={links[0].title} />
-        <Link url={"links[0].url"} title={links[0].title} />
-        <Link url={"links[0].url"} title={links[0].title} />
-        <Link url={"links[0].url"} title={links[0].title} />
+        {/* map over links */}
+        {links.map((link) => (
+          <Link url={link.url} title={link.title} />
+        ))}
       </WidthContainer>
     </div>
   );
