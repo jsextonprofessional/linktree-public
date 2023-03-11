@@ -37,6 +37,9 @@ function App() {
         {links.map((link) => (
           <Link url={link.url} title={link.title} />
         ))}
+        <a href="https://www.github.com/jsextonprofessional" target="_blank">
+          spoink
+        </a>
       </WidthContainer>
     </div>
   );

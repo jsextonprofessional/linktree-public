@@ -6,7 +6,7 @@ interface LinkProps {
 export const Link = (props: LinkProps) => {
   return (
     <div className="border-4 border-blue-500  text-center">
-      <a href={props.title} target="_blank">
+      <a href={props.title} target="_blank" className="flex">
         {props.title}
       </a>
     </div>
