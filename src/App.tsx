@@ -34,7 +34,11 @@ function App() {
       <WidthContainer>
         {/* map over links using anchor tags where href=url and id=title  */}
         {links.map((link) => (
-          <a href={link.url} target="_blank">
+          <a
+            href={link.url}
+            target="_blank"
+            className="border-4 border-blue-500  text-center"
+          >
             {link.title}
           </a>
         ))}
