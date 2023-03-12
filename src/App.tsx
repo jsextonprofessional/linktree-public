@@ -1,5 +1,4 @@
 import { WidthContainer } from "../src/components/width-container/WidthContainer";
-import { Link } from "../src/components/link/Link";
 import "./App.css";
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
       title: "LinkedIn",
     },
     {
-      url: "https://www.instagram.com/jsextonprofessional/",
+      url: "https://www.instagram.com/jacob._.sexton/",
       title: "Instagram",
     },
     {
@@ -33,13 +32,12 @@ function App() {
   return (
     <div className="App">
       <WidthContainer>
-        {/* map over links */}
+        {/* map over links using anchor tags where href=url and id=title  */}
         {links.map((link) => (
-          <Link url={link.url} title={link.title} />
+          <a href={link.url} target="_blank">
+            {link.title}
+          </a>
         ))}
-        <a href="https://www.github.com/jsextonprofessional" target="_blank">
-          spoink
-        </a>
       </WidthContainer>
     </div>
   );
