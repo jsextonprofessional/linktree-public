@@ -1,3 +1,9 @@
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
+
 .purple:hover {
 	background-color: #9c27b0;
 }
