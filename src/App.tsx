@@ -4,46 +4,58 @@ import "./App.css";
 function App() {
   const links = [
     {
+      key: 0,
       url: "https://jacobsexton.pages.dev/",
-      title: "Portfolio",
+      title: "portfolio",
       bgColor: "purple",
     },
     {
+      key: 1,
       url: "https://www.github.com/jsextonprofessional",
-      title: "Github",
+      title: "github",
       bgColor: "blue",
     },
     {
+      key: 2,
       url: "https://www.linkedin.com/in/jsextonprofessional/",
-      title: "LinkedIn",
+      title: "linkedin",
       bgColor: "green",
     },
     {
+      key: 3,
       url: "https://www.instagram.com/jacob._.sexton/",
-      title: "Instagram",
+      title: "instagram",
       bgColor: "yellow",
     },
     {
+      key: 4,
       url: "#",
-      title: "Email Me",
+      title: "email me",
       bgColor: "orange",
     },
     {
+      key: 5,
       url: "#",
-      title: "Resume",
+      title: "resume",
       bgColor: "red",
     },
   ];
+
+  const emailMe = () => {
+    window.open("mailto:jsextonprofessional@protonmail.com");
+  };
 
   return (
     <div className="bg-black">
       <WidthContainer>
         {links.map((link) => (
           <a
+            key={link.key}
             href={link.url}
             target="_blank"
             className={`bg-black border-8 border-white py-8 text-center text-white text-2xl font-black
               ${link.bgColor}`}
+            onClick={link.title === "email me" ? emailMe : undefined}
           >
             {link.title}
           </a>
