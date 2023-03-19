@@ -30,14 +30,13 @@ function App() {
   ];
 
   return (
-    <div className="App">
+    <div className="bg-purple-500">
       <WidthContainer>
-        {/* map over links using anchor tags where href=url and id=title  */}
         {links.map((link) => (
           <a
             href={link.url}
             target="_blank"
-            className="border-4 border-blue-500  text-center"
+            className="border-8 border-black py-4 text-center text-black text-2xl font-black shadow-[0_1rem_1rem_1rem_rgba(255, 255, 255)] hover:text-white hover:bg-black hover:border-white"
           >
             {link.title}
           </a>
