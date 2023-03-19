@@ -5,7 +5,7 @@ function App() {
   const links = [
     {
       key: 0,
-      url: "https://jacobsexton.pages.dev/",
+      url: "https://jacobsexton.cool/",
       title: "portfolio",
       bgColor: "purple",
     },
