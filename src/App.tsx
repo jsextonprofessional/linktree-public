@@ -46,7 +46,7 @@ function App() {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-black h-screen">
       <WidthContainer>
         {links.map((link) => (
           <a
