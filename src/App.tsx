@@ -35,7 +35,7 @@ function App() {
     },
     {
       key: 5,
-      url: "https://docs.google.com/document/d/1KWZSUeuGeYfzJqlBEq1MA-XWcDDYyJFSLKN4-_Z77yg/edit?usp=sharing",
+      url: "https://drive.google.com/file/d/1TIj8UnHtLWLBIr7tz5sZpIYNMdFnzyEZ/view",
       title: "resume",
       bgColor: "red",
     },
